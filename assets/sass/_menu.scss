@@ -1,0 +1,86 @@
+#menu {
+    padding: 100px 0;
+    background: $greyBG;
+    // background-image: 
+    // url("https://img.freepik.com/free-photo/white-textured-wall-background-texture_1368-6402.jpg?size=338&ext=jpg");
+    background-position: center;
+    background-repeat: repeat;
+
+    h2,h5 {
+        text-align: center;
+    }
+
+    .box {
+        background: #fff;
+        padding: 20px;
+
+        .title {
+            display: block;
+            font-weight: 700;
+            font-size: .9rem;
+            text-align: center;
+        }
+
+        .details {
+            font-weight: 300;
+            font-size: .8rem;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .box-circle {
+            position: absolute;
+            bottom: 0;
+            margin: 0 auto;
+            font-family: $displayFont;
+            font-size: 2rem;
+            background: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+            width: 100px;
+            left: 50%;
+            transform: translate(-50%, 50%);
+            box-shadow: 0 0 0 10px rgba(255,255,255,0.41);
+        }
+
+        .box-img {
+            position: relative;
+            width: 100%;
+            height: 180px;
+            background: linear-gradient(135deg,rgba(0,0,0,.2)0,#002d77 100%);
+            background-image:
+            url("http://www.thelofthawaii.com/images/menu_staff12.jpg?crc=3849187541");
+            background-position: center;
+            background-size: cover;
+            margin-bottom: 75px;
+        }
+
+        .box-img2 {
+                position: relative;
+                width: 100%;
+                height: 180px;
+                background: linear-gradient(135deg,rgba(0,0,0,.2)0,#002d77 100%);
+                background-image:
+                url("http://www.thelofthawaii.com/images/menu_entree1.jpg?crc=4199814825");
+                background-position: center;
+                background-size: cover;
+                margin-bottom: 75px;
+        }
+
+
+        .box-img3 {
+            position: relative;
+            width: 100%;
+            height: 180px;
+            background: linear-gradient(135deg,rgba(0,0,0,.2)0,#002d77 100%);
+            background-image:
+            url("http://www.thelofthawaii.com/images/menu_special12.jpg?crc=274338477");
+            background-position: center;
+            background-size: cover;
+            margin-bottom: 75px;
+    }
+    }
+}

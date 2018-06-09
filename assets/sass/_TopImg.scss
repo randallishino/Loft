@@ -1,0 +1,73 @@
+.topimg {
+    background:black;
+    min-height: 450px;
+    height:100vh;
+    background: linear-gradient(135deg,rgba(0,0,0,.2)0,#002d77 100%);
+    background-image: linear-gradient(135deg,rgba(0,0,0,.2) 0, #000 100%),
+    url("https://static1.squarespace.com/static/548ddba9e4b0d3ebe89358a3/548f1578e4b09fadb6095ce7/548f1594e4b0991231a94731/1418663318046/SENDTOBETH.jpg?format=2500w");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+    .title {
+        padding: 200px 0 80px;
+        text-align: right;
+
+        h5 { 
+            text-transform: uppercase;
+            color:white;
+            font-weight:300;
+            text-align: right;  
+        }
+    
+    
+        h1 { 
+            font-family: $displayFont;
+            text-transform: uppercase;
+            color:white;
+            font-weight:300;
+            font-size: 6rem;
+        }
+    
+    }
+    .contact-info {
+        position: absolute;
+        bottom: 50px;
+        right: 0;
+        width: 100%;
+        text-align: right;
+        color: $paragraphColor;
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+
+
+        strong {
+            font-weight: bold;
+            color: white;
+        }
+
+        h2 { 
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .call {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            color: $paragraphColor;
+        }
+        
+        .hours {
+            font-size: 1rem;
+        }
+    }
+
+}
+
+// @media only screen and (max-width: 400px) {
+//     .topimg {
+//         min-height: 200px;
+//         height: 50vh;
+//     }
+// }

@@ -1,0 +1,46 @@
+#story {
+    padding: 100px 0;
+    
+    .quote {
+        color: $paragraphColor;
+        font-family: 'Yesteryear', cursive;
+        font-size: 2.5rem;
+        margin: 0.5rem 0 3rem;
+        
+        strong {
+            color: $black;
+            font-weight: 700;
+        }
+    }
+
+    .btn {
+        padding: 20px 40px;
+        display: inline-block;
+        border: 1px solid $black;
+        text-align: center;
+        text-decoration: none;
+        color: $black;
+        text-transform: uppercase;
+        font-family: $displayFont;
+        transition: all .5s ease-in-out;
+
+        &:hover {
+            background: $red;
+            color: white;
+        }
+
+    }
+
+    .image {
+        // background: linear-gradient(135deg,rgba(0,0,0,.2)0,#002d77 100%);
+        background-image:
+        url("http://www.thelofthawaii.com/images/pic_polaroid.jpg?crc=4175571773");
+        background-position: right;
+        background-size: cover;
+        max-width: 520px;
+        height: 400px;
+        margin: 0 auto;
+    }
+}
+
+

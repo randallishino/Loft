@@ -1,0 +1,54 @@
+.reviews {
+    padding: 50px 0;
+    text-align: right;
+
+
+    .side-img {
+        // position: relative;
+        height: 200px;
+        width: 400px;
+        text-align: center;
+        margin-left: 150px;
+        margin-top: 60px;
+
+    img {
+        // position:absolute;
+        width:100%;
+    }
+    }
+
+    .review {
+        font-size: 0.83rem;
+    }
+    h4 {
+        font-weight: 600;
+        font-size: 0.9rem;
+        margin-bottom: 2rem;
+    }
+
+    .author {
+        font-size: 1rem;
+        color: $paragraphColor;
+        font-weight: 300;
+        text-transform: capitalize;
+        margin-bottom: 2rem;
+
+        strong {
+            color: $black;
+            font-weight: 700;
+        }
+    }
+
+    .arrows {
+        .fa-arrow-left , .fa-arrow-right {
+            font-size: 1.5rem;
+            padding: 20px 10px;
+            cursor: pointer;
+            color: $paragraphColor;
+        }
+
+        .fa-arrow-left.ready , .fa-arrow-right.ready {
+            color:black;
+        }
+    }
+}
