@@ -35,7 +35,7 @@ gulp.task('styles', () => {
  * Push build to gh-pages
  */
 gulp.task('deploy', function () {
-  return gulp.src("./public/**/*")
+  return gulp.src("./assets/**/*")
     .pipe(deploy())
 });
 
