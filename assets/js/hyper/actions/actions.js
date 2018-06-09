@@ -18,8 +18,6 @@ var reviewLeft = function (state,actions) {
   )
 }
 
-function showMenu(){
-}
 
 function intro(state, actions){
   console.log('Just ran my first action' )
