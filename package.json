@@ -36,22 +36,18 @@
     "production": "./node_modules/.bin/webpack -p",
     "watch": "gulp",
     "sass": "gulp styles",
-    "js": "gulp webpack"
+    "js": "gulp webpack",
+    "start": "node server.js"
   },
   "devDependencies": {
     "babel-preset-stage-0": "^6.24.1"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/codingphasedotcom/hyperapp-starterkit.git"
+    "type": "git"
   },
   "keywords": [
     "hyperapp"
   ],
-  "author": "joe santos garcia",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/codingphasedotcom/hyperapp-starterkit/issues"
-  },
-  "homepage": "https://github.com/codingphasedotcom/hyperapp-starterkit#readme"
+  "author": "randall ishino",
+  "license": "ISC"
 }
