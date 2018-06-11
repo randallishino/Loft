@@ -1,6 +1,7 @@
 
 const path = require('path');
 const webpack = require('webpack')
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 
 const VENDOR_LIBS = [
   'hyperapp',
@@ -49,6 +50,9 @@ module.exports = {
                    return module.context && module.context.indexOf('node_modules') !== -1;
                 }
             }),
+
+            new UglifyJSPlugin()
+
     //         new webpack.optimize.UglifyJsPlugin({
     //   sourceMap: options.devtool && (options.devtool.indexOf("sourcemap") >= 0 || options.devtool.indexOf("source-map") >= 0)
     // }),

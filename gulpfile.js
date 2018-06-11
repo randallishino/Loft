@@ -1,7 +1,8 @@
 const gulp = require('gulp')
 const sass = require('gulp-sass')
-const deploy = require('gulp-gh-pages')
 const autoprefixer = require('gulp-autoprefixer')
+const surge = require('gulp-surge')
+
 // const concat = require('gulp-concat')
 // const babel = require('gulp-babel')
 // const watch = require('gulp-watch')
@@ -29,15 +30,12 @@ gulp.task('styles', () => {
     .pipe(browserSync.stream())
 })
 
-
-
-/**
- * Push build to gh-pages
- */
-gulp.task('deploy', function () {
-  return gulp.src("./assets/**/*")
-    .pipe(deploy())
-});
+gulp.task('deploy', [], function () {
+  return surge({
+    project: './assets',         // Path to your static build directory
+    domain: 'loft.surge.sh'  // Your domain or Surge subdomain
+  })
+})
 
 gulp.task('browser-sync', ['styles'], function () {
   // THIS IS FOR SITUATIONS WHEN YOU HAVE ANOTHER SERVER RUNNING

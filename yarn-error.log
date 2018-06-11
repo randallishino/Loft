@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/Cellar/node/9.4.0/bin/node /usr/local/bin/yarn run watch
+  /usr/local/Cellar/node/9.4.0/bin/node /usr/local/bin/yarn run production
 
 PATH: 
   /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
@@ -44,6 +44,7 @@ npm manifest:
       "node-sass": "^4.5.2",
       "sass-loader": "^6.0.3",
       "standard": "^10.0.2",
+      "surge": "^0.20.1",
       "webpack": "^2.7.0",
       "webpack-stream": "^3.2.0"
     },
@@ -52,24 +53,23 @@ npm manifest:
       "production": "./node_modules/.bin/webpack -p",
       "watch": "gulp",
       "sass": "gulp styles",
-      "js": "gulp webpack"
+      "js": "gulp webpack",
+      "start": "node server.js"
     },
     "devDependencies": {
-      "babel-preset-stage-0": "^6.24.1"
+      "babel-preset-stage-0": "^6.24.1",
+      "gulp-gh-pages": "^0.5.4",
+      "gulp-surge": "^0.1.0",
+      "uglifyjs-webpack-plugin": "^1.2.5"
     },
     "repository": {
-      "type": "git",
-      "url": "git+https://github.com/codingphasedotcom/hyperapp-starterkit.git"
+      "type": "git"
     },
     "keywords": [
       "hyperapp"
     ],
-    "author": "joe santos garcia",
-    "license": "ISC",
-    "bugs": {
-      "url": "https://github.com/codingphasedotcom/hyperapp-starterkit/issues"
-    },
-    "homepage": "https://github.com/codingphasedotcom/hyperapp-starterkit#readme"
+    "author": "randall ishino",
+    "license": "ISC"
   }
 
 yarn manifest: 
@@ -80,10 +80,10 @@ Lockfile:
 
 Trace: 
   Error: Command failed.
-  Exit code: 1
+  Exit code: 2
   Command: sh
-  Arguments: -c gulp
-  Directory: /Users/randallishino/hyper-restaurant
+  Arguments: -c ./node_modules/.bin/webpack -p
+  Directory: /Users/randallishino/Loft
   Output:
   
       at ProcessTermError.MessageError (/usr/local/lib/node_modules/yarn/lib/cli.js:186:110)

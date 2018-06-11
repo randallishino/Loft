@@ -28,6 +28,7 @@
     "node-sass": "^4.5.2",
     "sass-loader": "^6.0.3",
     "standard": "^10.0.2",
+    "surge": "^0.20.1",
     "webpack": "^2.7.0",
     "webpack-stream": "^3.2.0"
   },
@@ -41,7 +42,9 @@
   },
   "devDependencies": {
     "babel-preset-stage-0": "^6.24.1",
-    "gulp-gh-pages": "^0.5.4"
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-surge": "^0.1.0",
+    "uglifyjs-webpack-plugin": "^1.2.5"
   },
   "repository": {
     "type": "git"
