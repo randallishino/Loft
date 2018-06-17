@@ -18,17 +18,7 @@ var reviewLeft = function (state,actions) {
   )
 }
 
-
-function intro(state, actions){
-  console.log('Just ran my first action' )
-  return (
-    {count: state.count + 1}
-  )
-}
-
 export const actions = {
   reviewRight,
-  reviewLeft,
-  intro,
-  showMenu
+  reviewLeft
 }

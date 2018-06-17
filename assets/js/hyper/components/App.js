@@ -1,4 +1,4 @@
-import {h, app} from 'hyperapp'
+import { h, app } from "hyperapp";
 import Header from './Header.js'
 import TopImg from './TopImg.js'
 import Story from './Story.js'
@@ -7,8 +7,8 @@ import RandomQuote from './RandomQuote.js'
 import Contact from "./Contact.js"
 import Reviews from './Reviews.js'
 import Footer from './Footer.js'
-
-export default function App({state, actions}) {
+import { Link, Route, location } from "@hyperapp/router"
+export default function Landing({state, actions}) {
   return (
     <div class={'app'}>
     <Header state={state} actions={actions} />
@@ -22,5 +22,3 @@ export default function App({state, actions}) {
     </div>
   )
 }
-// <Header state={state} actions={actions}/>
-// <Button state={state} actions={actions}/>
